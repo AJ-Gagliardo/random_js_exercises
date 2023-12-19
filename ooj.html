@@ -1,66 +1,85 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="ooj.css">
-    <title>Object-oriented JavaScript example</title>
+    <meta charset="utf-8"/>
+    <title>Object basics: Task 1</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" href="../styles.css" />
   </head>
 
   <body>
-    <p>This example requires you to enter commands in your browser's JavaScript console (see <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools">What are browser developer tools</a> for more information).</p>
-    
-    <script>
+
+    <section class="preview">
 
 
-const person = {
-  name: {
-    first: "Bob",
-    last: "Smith",
-  },
-  age: 32,
-  bio() {
-    console.log(`${this.name[0]} ${this.name[1]} is ${this.age} years old.`);
-  },
-  introduceSelf: function () {
-    console.log(`Hi! I'm ${this.name[0]}.`);
-  },
-};  
-/*
-person.age = 45;
-person["name"]["last"] = "Cratchit";
 
-person['eyes'] = 'hazel';
-person.farewell = function () {
-  console.log("Bye everybody!");
+    </section>
 
-};
-
-
-const myDataName = "height";
-const myDataValue = "1.75m";
-person[myDataName] = myDataValue;
-
-function Person(name) {
-  this.name = name;
-  this.introduceSelf = function () {
-    console.log(`Hi! I'm ${this.name}.`);
-  };
-}
-const salva = new Person("Salva");
-console.log(salva.name);
-salva.introduceSelf();
-*/
-
-const catName = {
-  name: 'Rengar',
-  greeting: function(){
-    console.log('Meow!'),
-  }
-}
-
-
-    </script>
   </body>
+  <script>
 
-</html>
+    // const cat = {
+    //   name : 'Bertie',
+    //   breed : 'Cymric',
+    //   color : 'white',
+    //   greeting: function() {
+    //     console.log('Meow!');
+    //   }
+    // }
+
+    const bandInfo = {
+      name: 'Muse',
+      nationality: 'English',
+      genre: 'rock',
+      members: 3,
+      formed: 1999,
+      split: false,
+      albums:[
+        {
+          name:'Showbiz', 
+      released:1999,
+        },
+        {
+          name:'Absolution',
+          released:2003
+        },
+        ]
+
+    };
+    
+  
+  
+    // Add your code here
+
+    // const catName = cat['name'];
+    // cat['color']= 'black';
+
+    // Don't edit the code below here!
+
+      // const section = document.querySelector('section');
+
+      // let para1 = document.createElement('p');
+      // let para2 = document.createElement('p');
+
+      // para1.textContent = `The cat's name is ${ catName }.`;
+      // para2.textContent = `The cat's color is ${ cat.color }.`;
+
+      // section.appendChild(para1);
+      // section.appendChild(para2);
+      const section = document.querySelector('section');
+    let para1 = document.createElement('p');
+    para1.textContent = bandInfo;
+    section.appendChild(para1);
+  
+  </script>
+
+</html> 
