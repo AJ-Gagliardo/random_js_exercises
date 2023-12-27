@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+
+const fruits = ['apple', 'banana']
+fruits.push('strawberry')
+console.log(fruits)
+
+fruits.pop();
+console.log(fruits);
+
+fruits.push('cherry');
+console.log(fruits);
+fruits.splice(1,1,'kiwi','mango');
+console.log(fruits)
+
+fruits1= ['apple','banana']
+fruits2 = ['cherry','kiwi']
+combinedFruits = fruits1.concat(fruits2)
+console.log(combinedFruits)
+
+fruitString = combinedFruits.join(', ');
+console.log(fruitString);
+
+const numbers = [1,2,3];
+const doubled = numbers.map(number=>number*2);
+console.log(doubled)
+
+
+
+</script>
+</html>
